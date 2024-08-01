@@ -28,6 +28,4 @@ loginForm.addEventListener("submit", async (event : Event) => {
   } catch (error){
     console.log(error);
   }
-
-  
 })
