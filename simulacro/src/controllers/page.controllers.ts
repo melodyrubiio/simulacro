@@ -1,26 +1,26 @@
-import { Ilogin, IresponseLogin } from "../model/ilogin";
+import { ILogin, IResponseLogin } from "../models/ILogin.ts";
 
-export class PageController{
-    url: string;
+export class PageController {
+    url : string;
 
-    constructor(url: string){
+    constructor(url : string) {
         this.url = url;
     }
 
-    async login(data: Ilogin, endPoint: string):Promise<IresponseLogin>{
-        const Response = await fetch(` ${this.url}${endPoint}`, {
-            method: 'POST',
-            headers: {
+    async login(data : ILogin, endPoint : string) : Promise<IResponseLogin> { 
+        const response = await fetch(`${this.url}${endPoint}`, {
+            method : 'POST',
+            headers : {
                 'Content-Type' : 'Application/json'
             },
-            body: JSON.stringify(data)
-        })
-        if(Response.status !== 200){
-            throw new Error('login fail');
-        }
-        console.log(`res.status: ${Response.status}`);
+            body : JSON.stringify(data)
+        });
 
-        const token: IresponseLogin = await Response.json();
+        if (response.status != 200) {
+            throw new Error('no se pudo iniciar sesión');
+        }
+
+        const token : IResponseLogin = await response.json();
         return token;
     }
 }

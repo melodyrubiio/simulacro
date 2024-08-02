@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/scss/style.scss">
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <button id="logout button">Log out</button>
-    </header>
-    <script type="module" src="../controllers/home.ts" ></script>
+        <section class="headerTitle-container">
+          <h1 class="headerTitle">Riwi Store</h1>
+        </section>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="./cities.html">Agregar ciudad</a></li>
+            <button id="logout-button">salir</button>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="card-section">
+
+        </section>
+      </main>
+
+    <script type="module" src="/src/controllers/home.ts"></script>
 </body>
 </html>

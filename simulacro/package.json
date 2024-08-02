@@ -11,5 +11,11 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+  },
+  "dependencies": {
+    "json": "^11.0.0",
+    "server": "^1.0.39"
   }
 }
+ 
+

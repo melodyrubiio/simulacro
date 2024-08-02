@@ -1,0 +1,16 @@
+{
+    "cities" : [
+        {
+            "city": "Bogotá",
+            "country": "Colombia",
+            "date": "2024-08-01T17:22:38.786Z",
+            "cityDescription": "ciudad capital"
+        },
+        {
+            "city": "Medellín",
+            "country": "Colombia",
+            "date": "2024-08-01T17:32:57.931Z",
+            "cityDescription": "Ciudad de la Eterna Primavera"
+        }
+    ]
+}
